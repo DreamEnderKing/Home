@@ -1,4 +1,5 @@
 window.drawPoint = (x, y) => {
+    alert("Me!");
     var c = document.getElementById("canvas");
     var can = c.getContext("2d");
     //can.scale(2.5, 2.5);
