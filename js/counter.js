@@ -1,9 +1,11 @@
-window.drawPoint = (x, y) => {
-    Window.alert("Me!");
-    var c = document.getElementById("canvas");
-    var can = c.getContext("2d");
-    //can.scale(2.5, 2.5);
-    //can.fillRect(x, y, x + 2, y + 2);
-    can.fillRect(10, 20, 10 + 50, 20 + 50);
+window.drawPoint = (x, y, r) => {
+    //window.alert("Me");
+    can.fillRect(x - r / 2, y - r / 2, x + r / 2, y + r / 2);
     return 0;
+}
+
+function canvasLoad(){
+    can = document.getElementById("canvas").getContext("2d");
+
+    can.scale(0.4, 0.4);
 }
