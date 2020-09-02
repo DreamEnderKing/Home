@@ -1,3 +1,4 @@
+var can;
 window.drawPoint = (x, y, r) => {
     //window.alert("Me");
     can.fillRect(x - r / 2, y - r / 2, x + r / 2, y + r / 2);
